@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="app_user">
+        <column>id</column>
+        <column>username</column>
+        <column>password</column>
+        <column>first_name</column>
+        <column>last_name</column>
+        <column>address</column>
+        <column>city</column>
+        <column>country</column>
+        <column>email</column>
+        <column>phone_number</column>
+        <column>postal_code</column>
+        <column>province</column>
+        <column>website</column>
+        <column>password_hint</column>
+        <column>version</column>
+        <column>account_enabled</column>
+        <column>account_expired</column>
+        <column>account_locked</column>
+        <column>credentials_expired</column>
+        <row>
+            <value description="id">1</value>
+            <value description="username">user</value>
+            <value description="password">$2a$10$CnQVJ9bsWBjMpeSKrrdDEeuIptZxXrwtI6CZ/OgtNxhIgpKxXeT9y</value>
+            <value description="first_name">Tomcat</value>
+            <value description="last_name">User</value>
+            <value description="address"></value>
+            <value description="city">Denver</value>
+            <value description="country">US</value>
+            <value description="email">matt_raible@yahoo.com</value>
+            <value description="phone_number"></value>
+            <value description="postal_code">80210</value>
+            <value description="province">CO</value>
+            <value description="website">http://tomcat.apache.org</value>
+            <value description="password_hint"><![CDATA[The same as your username.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+        </row>
+        <row>
+            <value description="id">2</value>
+            <value description="username">admin</value>
+            <value description="password">$2a$10$bH/ssqW8OhkTlIso9/yakubYODUOmh.6m5HEJvcBq3t3VdBh7ebqO</value>
+            <value description="first_name">Matt</value>
+            <value description="last_name">Raible</value>
+            <value description="address"></value>
+            <value description="city">Denver</value>
+            <value description="country">US</value>
+            <value description="email">matt@raibledesigns.com</value>
+            <value description="phone_number"></value>
+            <value description="postal_code">80210</value>
+            <value description="province">CO</value>
+            <value description="website">http://raibledesigns.com</value>
+            <value description="password_hint"><![CDATA[The same as your username.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+        </row>
+    </table>
+    <table name="role">
+        <column>id</column>
+        <column>name</column>
+        <column>description</column>
+        <row>
+            <value description="id">1</value>
+            <value description="name">ROLE_ADMIN</value>
+            <value description="description"><![CDATA[Administrator role (can edit Users)]]></value>
+        </row>
+        <row>
+            <value description="id">2</value>
+            <value description="name">ROLE_USER</value>
+            <value description="description"><![CDATA[Default role for all Users]]></value>
+        </row>
+    </table>
+    <table name="user_role">
+        <column>user_id</column>
+        <column>role_id</column>
+        <row>
+            <value description="user_id">1</value>
+            <value description="role_id">2</value>
+        </row>
+        <row>
+            <value description="user_id">2</value>
+            <value description="role_id">1</value>
+        </row>
+    </table>
+    
+     <table name="empleado">
+    	<column>cedula</column>
+    	<column>nombre</column>
+    	<column>apellido1</column>
+    	<column>apellido2</column>
+    	<column>correoelectronico</column>
+    	<row>
+	    	<value description="cedula">114940116</value>
+	    	<value description="nombre">Lourdes</value>
+	    	<value description="apellido1">Sotomayor</value>
+	    	<value description="apellido2">Cespedes</value>
+	    	<value description="correoElectronico">lsotomayor@gmail.com</value>
+    	</row>
+    	<row>
+	    	<value description="cedula">894727455</value>
+	    	<value description="nombre">Carlos</value>
+	    	<value description="apellido1">Chacon</value>
+	    	<value description="apellido2">Quesada</value>
+	    	<value description="correoElectronico">cchacon@gmail.com</value>
+    	</row>
+    	<row>
+	    	<value description="cedula">897412748</value>
+	    	<value description="nombre">Juan</value>
+	    	<value description="apellido1">Lopez</value>
+	    	<value description="apellido2">Sanchez</value>
+	    	<value description="correoElectronico">jlopez@gmail.com</value>
+    	</row>
+    </table>
+      <table name="empleadotel">
+    <column>telefono</column>
+    <column>cedula_empleado</column>
+    <row>
+	    <value description="telefono">12345678</value>
+	    <value description="cedula_empleado">114940116</value>
+    </row>
+    <row>
+	    <value description="telefono">34567865</value>
+	    <value description="cedula_empleado">894727455</value>
+    </row>
+    <row>
+	    <value description="telefono">12345678</value>
+	    <value description="cedula_empleado">114940116</value>
+    </row>
+    <row>
+	    <value description="telefono">34567865</value>
+	    <value description="cedula_empleado">894727455</value>
+    </row>
+    </table>
+    
+    <table name="puestoempleado">
+    <column>codigoMedico</column>
+    <column>puesto</column>
+    <column>cedula_empleado</column>
+    <row>
+    	<value description="codigoMedico">1</value>
+    	<value description="puesto">Asistente Dental</value>
+    	<value description="cedula_empleado">894727455</value>
+    </row>
+    <row>
+    	<value description="codigoMedico">9847</value>
+    	<value description="puesto">Ortodoncia</value>
+    	<value description="cedula_empleado">114940116</value>
+    </row>
+    <row>
+    	<value description="codigoMedico">9094</value>
+    	<value description="puesto">Endodoncia</value>}
+    	<value description="cedula_empleado">897412748</value>
+    </row>
+    </table>
+      
+      <table name="paciente">
+    <column>cedula</column>
+    <column>nombre</column>
+    <column>apellido1</column>
+    <column>apellido2</column>
+    <column>direccion</column>
+    <column>correoElectronico</column>
+    <row>
+    	<value description="cedula">123456789</value>
+    	<value description="nombre">Maria</value>
+    	<value description="apellido1">Acon</value>
+    	<value description="apellido2">Huertas</value>
+    	<value description="direccion">Aserri</value>
+    	<value description="correoElectronico">macon@gmail.com</value>
+    </row>
+    <row>
+    	<value description="cedula">278978447</value>
+    	<value description="nombre">Luisa</value>
+    	<value description="apellido1">Chaves</value>
+    	<value description="apellido2">Rodriguez</value>
+    	<value description="direccion">San Jose, Barrio del Carmen</value>
+    	<value description="correoElectronico">lchaves@gmail.com</value>
+    </row>
+    </table>
+    
+    <table name="pacientetel"></table>
+    <column>pacienteTel_id</column>
+    <column>telefono</column>
+    <column>cedula_paciente</column>
+    <row>
+    	<value description="telefono">23984578</value>
+    	<value description="cedula_paciente">123456789</value>
+    </row>
+    <row>
+	    <value description="telefono">89489428</value>
+	    <value description="cedula_paciente">278978447</value>
+    </row>
+    <row>
+    	<value description="telefono">33994589</value>
+    	<value description="cedula_paciente">123456789</value>
+    </row>
+    <row>
+    	<value description="telefono">90438934</value>
+    	<value description="cedula_paciente">278978447</value>
+    </row>
+      
+    <table name="historialclinico">
+    <column>idHistorialClinico</column>
+    <column>cedula_paciente</column>
+    <column>cedula_empleado</column>
+    <column>tratamiento</column>
+    <column>diagnostico</column>
+    <column>proximaCita</column>
+    <row>
+    	<value  description="idHistorial">123456789</value>
+    	<value description="cedula_paciente">123456789</value>
+    	<value description="cedula_empleado">114940116</value>
+    	<value description="tratamiento">Revision General</value>
+    	<value description="diagnostico">Caries</value>
+    	<value description="proximaCita">2016-12-15</value>
+    </row>
+    <row>
+   		 <value  description="idHistorial">278978447</value>
+    	<value description="cedula_paciente">278978447</value>
+    	<value description="cedula_empleado">894727455</value>
+    	<value description="tratamiento">Ajuste de tratamiento</value>
+    	<value description="diagnostico">Ajuste de brackers</value>
+    	<value description="proximaCita">2017-01-11</value>
+    </row>
+    </table>
+    <table name="procedimientos"></table>
+    <column>procedimiento</column>
+    <column>idHistorialClinico</column>
+    <row>
+	    <value description="procedimiento">Tramiento en las caries</value>
+	    <value description="idHistorialClinico">278978447</value>
+    </row>
+     <row>
+	    <value description="procedimiento">Tratamiento de nervio</value>
+	    <value description="idHistorialClinico">123456789</value>
+    </row>
+     <row>
+	    <value description="procedimiento">Extraccion de molar</value>
+	    <value description="idHistorialClinico">123456789</value>
+    </row>
+     <row>
+	    <value description="procedimiento">Ajuste de ligas</value>
+	    <value description="idHistorialClinico">278978447</value>
+    </row>
+ </dataset>
